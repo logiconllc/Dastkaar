@@ -22,6 +22,7 @@ const styles = () =>
 
 const Header = ({ classes }) => (
   <>
+    const classes = styles()
     <AppBar color={'primary'} position={'sticky'} className={styles.boxShadow}>
       <Container maxWidth='xs{12}'>
         <Toolbar>
