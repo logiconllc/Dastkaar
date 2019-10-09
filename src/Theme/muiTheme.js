@@ -21,18 +21,6 @@ const theme = createMuiTheme({
     shape: {
       borderRadius: 0
     }
-  },
-  overrides: {
-    MuiAvatar: {
-      avatar: {
-        margin: 10
-      },
-      bigAvatar: {
-        margin: 10,
-        width: 60,
-        height: 60
-      }
-    }
   }
 });
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import Header from './components/Header';
+import Header from './Components/Header';
+import Banner from './Components/Banner';
 
 function App() {
   return (
@@ -8,6 +9,9 @@ function App() {
       <header className='App-header'>
         <Header />
       </header>
+      <div>
+        <Banner />
+      </div>
     </div>
   );
 }
