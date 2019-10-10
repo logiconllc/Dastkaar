@@ -2,22 +2,20 @@ import React from 'react';
 import { Grid, createStyles, Typography } from '@material-ui/core';
 import { withStyles } from '@material-ui/styles';
 import Container from '@material-ui/core/Container';
-import { getIn } from 'formik';
 
 const styles = () =>
   createStyles({
     heading: {
       fontSize: '100px',
-      fontFamily: 'auto',
-      paddingTop: '100px'
+      fontFamily: 'auto'
     },
-    imgContainer: {
-      paddingTop: '40px'
+    conatinerPadding: {
+      padding: '96px'
     }
   });
 const Products = ({ classes }) => (
   <>
-    <Container maxWidth='xl'>
+    <Container maxWidth='xl' className={classes.conatinerPadding}>
       <Grid
         container
         justify='center'
@@ -36,13 +34,14 @@ const Products = ({ classes }) => (
           </Typography>
         </Grid>
         <Grid item>
-          <Grid container className={classes.imgContainer} spacing={10}>
+          <Grid container spacing={10}>
             <Grid item>
               <Grid container direction={'column'} alignItems={'center'}>
                 <Grid item>
                   <img
                     width={'180'}
                     src='https://www.thannleder.de/wp-content/themes/thann/img/icons/biorind.png'
+                    alt='Biorinder'
                   />
                 </Grid>
                 <Grid item>
@@ -63,6 +62,7 @@ const Products = ({ classes }) => (
                   <img
                     width={'180'}
                     src='https://www.thannleder.de/wp-content/themes/thann/img/icons/weideschlachtung.png'
+                    alt='Biorinder'
                   />
                 </Grid>
                 <Grid item>
@@ -83,6 +83,7 @@ const Products = ({ classes }) => (
                   <img
                     width={'180'}
                     src='https://www.thannleder.de/wp-content/themes/thann/img/icons/pflanzengerbung.png'
+                    alt='Biorinder'
                   />
                 </Grid>
                 <Grid item>
