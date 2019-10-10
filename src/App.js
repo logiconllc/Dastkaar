@@ -4,6 +4,8 @@ import Header from './Components/Header';
 import Banner from './Components/Banner';
 import Products from './Components/why-us';
 import Category from './Components/Category';
+import Stories from './Components/Story';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <Banner />
       <Products />
       <Category />
+      <Stories />
+      <Footer />
     </div>
   );
 }

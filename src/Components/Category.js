@@ -65,6 +65,7 @@ const Category = ({ classes }) => (
                     src={
                       'https://smartkaya.com/wp-content/themes/kaya/img/feat-materials.jpg '
                     }
+                    alt='Premium Material'
                   />
                 </Grid>
                 <Grid item>
@@ -81,6 +82,7 @@ const Category = ({ classes }) => (
                     src={
                       'https://smartkaya.com/wp-content/themes/kaya/img/feat-construction.jpg'
                     }
+                    alt='Durable construction'
                   />
                 </Grid>
                 <Grid item>
@@ -100,7 +102,10 @@ const Category = ({ classes }) => (
                 <Grid item>
                   <img
                     className={classes.imgWidth}
-                    src='https://smartkaya.com/wp-content/themes/kaya/img/ring-light-anim.gif'
+                    src={
+                      'https://smartkaya.com/wp-content/themes/kaya/img/ring-light-anim.gif'
+                    }
+                    alt='Ring light'
                   />
                 </Grid>
                 <Grid item>
@@ -121,6 +126,7 @@ const Category = ({ classes }) => (
                     src={
                       'https://smartkaya.com/wp-content/themes/kaya/img/feat-design.jpg'
                     }
+                    alt='Made to work together'
                   />
                 </Grid>
                 <Grid item>

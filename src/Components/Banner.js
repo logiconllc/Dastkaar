@@ -14,7 +14,7 @@ const styles = () => {
 const Banner = ({ classes }) => (
   <>
     <Grid container>
-      <Grid item style={{ width: '100%' }}>
+      <Grid item style={{ width: '100%' }} sm={12} xs={12}>
         <img src={banner} className={classes.image} alt='banner' />
       </Grid>
     </Grid>

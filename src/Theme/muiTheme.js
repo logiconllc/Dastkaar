@@ -21,6 +21,15 @@ const theme = createMuiTheme({
     shape: {
       borderRadius: 0
     }
+  },
+  overrides: {
+    MuiButton: {
+      root: {
+        borderRadius: '0px',
+        height: '48px',
+        width: '178px'
+      }
+    }
   }
 });
 
