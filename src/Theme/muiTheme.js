@@ -29,6 +29,14 @@ const theme = createMuiTheme({
         height: '48px',
         width: '178px'
       }
+    },
+    MuiPaper: {
+      rounded: {
+        borderRadius: 'unset'
+      },
+      elevation1: {
+        boxShadow: 'unset'
+      }
     }
   }
 });
