@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Container, createStyles, Typography } from '@material-ui/core';
+import { Grid, Container, createStyles, Typography, Link } from '@material-ui/core';
 import { withStyles } from '@material-ui/styles';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import FacebookIcon from '@material-ui/icons/Facebook';
@@ -8,11 +8,13 @@ import line from '../Images/line.svg';
 import Paper from '@material-ui/core/Paper';
 import InputBase from '@material-ui/core/InputBase';
 import IconButton from '@material-ui/core/IconButton';
-import Divider from '@material-ui/core/Divider';
 const styles = () =>
   createStyles({
     imgSizing: {
       width: '30%'
+    },
+    conatinerPadding: {
+      padding: '80px'
     },
     socialContainer: {
       padding: '65px'
@@ -45,12 +47,13 @@ const styles = () =>
     iconButton: {
       background: 'black',
       color: 'white',
-      borderRadius: 'unset'
-    },
-    divider: {
-      height: 28,
-      margin: 4,
-      width: '1px'
+      borderRadius: 'unset',
+      width: '140px',
+      '&hover': {
+        color: '#unset',
+        cursor: 'pointer',
+        background: 'unset'
+      }
     },
     background: {
       background: '#EFE3D4'
@@ -59,12 +62,25 @@ const styles = () =>
 
 const Footer = ({ classes }) => (
   <Container maxWidth='xl' className={classes.background}>
-    <Grid
+      <Grid
       container
       justify={'center'}
       alignItems={'center'}
       direction={'column'}
+      className={classes.conatinerPadding}
     >
+    <Grid container direction={'column'} alignItems={'stretch'}>
+          <Grid item> 
+          <Link href="#" variant='caption' color={'secondary'} >Privacy Policy</Link>
+        </Grid>
+        <Grid item> 
+          <Link href="#" variant='caption' color={'secondary'} >Privacy Policy</Link>
+        </Grid>
+        <Grid item> 
+          <Link href="#" variant='caption' color={'secondary'} >Privacy Policy</Link>
+        </Grid>
+       
+      </Grid>
       <Grid item>
         <img
           src={
@@ -101,63 +117,16 @@ const Footer = ({ classes }) => (
               WEEKLY NEWSLETTER
             </Typography>
           </Grid>
-
-          {/* <Grid item>
-            <TextField
-              id='outlined-with-placeholder'
-              label='With placeholder'
-              placeholder='Placeholder'
-              margin='normal'
-              variant='outlined'
-              className={classes.TextField}
-            />
-            <Button
-              variant='outlined'
-              color='inherit'
-              className={classes.button}
-            >
-              subscribe
-            </Button>
-          </Grid> */}
-
           <Grid item>
-            {/* <TextField
-              label='With normal TextField'
-              InputProps={{
-                endAdornment: (
-                  <InputAdornment>
-                    <IconButton>
-                      <SearchIcon />
-                    </IconButton>
-                  </InputAdornment>
-                )
-              }}
-            /> */}
             <Paper className={classes.root}>
-              {/* <TextField
-                id='outlined-with-placeholder'
-                label='With placeholder'
-                placeholder='Placeholder'
-                margin='normal'
-                className={classes.TextField}
-              /> */}
               <InputBase
                 className={classes.input}
                 placeholder='Enter your email'
                 inputProps={{ 'aria-label': 'search google maps' }}
-              />
-              <Divider className={classes.divider} orientation='vertical' />
-              {/* <Button
-                className={classes.iconButton}
-                variant={'contained'}
-                color='secondary'
-              >
-                Subscribe
-              </Button> */}
+              />    
               <IconButton
                 color='secondary'
                 className={classes.iconButton}
-                aria-label='directions'
               >
                 <Typography variant={'caption'}>Subscribe</Typography>
               </IconButton>
