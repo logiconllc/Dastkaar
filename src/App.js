@@ -1,24 +1,15 @@
 import React from 'react';
-import './App.css';
-import Header from './Components/Header';
-import Banner from './Components/Banner';
-import Products from './Components/why-us';
-import Category from './Components/Category';
-import Stories from './Components/Story';
-import Footer from './Components/Footer';
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import {Landing} from "./Containers/Landing";
+import Routes from "./Utils/Routes";
 
 function App() {
   return (
-    <div className='App'>
-      <header className='App-header'>
-        <Header />
-      </header>
-      <Banner />
-      <Products />
-      <Category />
-      <Stories />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route component={Landing} exact path={Routes.Landing}/>
+      </Switch>
+    </BrowserRouter>
   );
 }
 
