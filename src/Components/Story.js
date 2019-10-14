@@ -24,6 +24,12 @@ const styles = () =>
     storyImage: {
       width: '410px',
       height: '600px'
+    },
+    storyBlog: {
+      position: 'absolute',
+      left: '7%',
+      color: 'black',
+      fontWeight: 'bold'
     }
   });
 const Stories = ({ classes }) => (
@@ -43,7 +49,6 @@ const Stories = ({ classes }) => (
           <img className={classes.lineBox} src={line} />
         </Grid>
         <Grid item>
-          {/* <Typography variant={'h4'}>STORIES</Typography> */}
           <Grid
             container
             justify={'center'}
@@ -51,6 +56,9 @@ const Stories = ({ classes }) => (
             className={classes.storyBox}
             spacing={4}
           >
+            {/* <Typography variant={'h2'} className={classes.storyBlog}>
+              Read the handcrafters <span> STORIES </span>
+            </Typography> */}
             <Grid item>
               <img src={story} className={classes.storyImage} />
             </Grid>

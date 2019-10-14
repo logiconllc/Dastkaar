@@ -4,6 +4,7 @@ import { withStyles } from '@material-ui/styles';
 import Container from '@material-ui/core/Container';
 import Fab from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
+import Products from './Products';
 
 const styles = () =>
   createStyles({
@@ -28,6 +29,14 @@ const styles = () =>
       width: '600px'
     }
   });
+
+function ProductsPage() {
+  return (
+    <div>
+      <Products />
+    </div>
+  );
+}
 
 const Category = ({ classes }) => (
   <>
@@ -145,7 +154,7 @@ const Category = ({ classes }) => (
           </Grid>
         </Grid>
         <Grid item>
-          <Fab color='secondary' aria-label='add'>
+          <Fab color='secondary' aria-label='add' onClick={ProductsPage}>
             <AddIcon />
           </Fab>
         </Grid>

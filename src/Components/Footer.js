@@ -1,5 +1,11 @@
 import React from 'react';
-import { Grid, Container, createStyles, Typography, Link } from '@material-ui/core';
+import {
+  Grid,
+  Container,
+  createStyles,
+  Typography,
+  Link
+} from '@material-ui/core';
 import { withStyles } from '@material-ui/styles';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import FacebookIcon from '@material-ui/icons/Facebook';
@@ -62,75 +68,111 @@ const styles = () =>
 
 const Footer = ({ classes }) => (
   <Container maxWidth='xl' className={classes.background}>
-      <Grid
+    <Grid
       container
       justify={'center'}
       alignItems={'center'}
-      direction={'column'}
+      direction={'row'}
       className={classes.conatinerPadding}
+      justify={'space-evenly'}
     >
-    <Grid container direction={'column'} alignItems={'stretch'}>
-          <Grid item> 
-          <Link href="#" variant='caption' color={'secondary'} >Privacy Policy</Link>
-        </Grid>
-        <Grid item> 
-          <Link href="#" variant='caption' color={'secondary'} >Privacy Policy</Link>
-        </Grid>
-        <Grid item> 
-          <Link href="#" variant='caption' color={'secondary'} >Privacy Policy</Link>
-        </Grid>
-       
-      </Grid>
       <Grid item>
-        <img
-          src={
-            'https://handlavet.edge-themes.com/wp-content/uploads/2019/03/logo-standard-black.png'
-          }
-          alt='logo'
-        />
+        <Grid container direction={'column'} alignItems={'center'}>
+          <Grid item>
+            <Link href='#' variant='caption' color={'secondary'}>
+              Privacy Policy
+            </Link>
+          </Grid>
+          <Grid item>
+            <Link href='#' variant='caption' color={'secondary'}>
+              Terms & Conditions
+            </Link>
+          </Grid>
+          <Grid item>
+            <Link href='#' variant='caption' color={'secondary'}>
+              About
+            </Link>
+          </Grid>
+        </Grid>
       </Grid>
       <Grid item>
         <Grid
           container
-          spacing={10}
-          className={classes.socialContainer}
+          direction={'column'}
+          justify={'center'}
           alignItems={'center'}
         >
           <Grid item>
-            <TwitterIcon />
+            <img
+              src={
+                'https://handlavet.edge-themes.com/wp-content/uploads/2019/03/logo-standard-black.png'
+              }
+              alt='logo'
+            />
           </Grid>
           <Grid item>
-            <InstagramIcon />
+            <Grid
+              container
+              spacing={10}
+              className={classes.socialContainer}
+              alignItems={'center'}
+            >
+              <Grid item>
+                <TwitterIcon />
+              </Grid>
+              <Grid item>
+                <InstagramIcon />
+              </Grid>
+              <Grid item>
+                <FacebookIcon />
+              </Grid>
+            </Grid>
           </Grid>
           <Grid item>
-            <FacebookIcon />
+            <Grid container direction={'column'} alignItems={'center'}>
+              <Grid item>
+                <img src={line} className={classes.lineBox} />
+              </Grid>
+              <Grid item>
+                <Typography
+                  variant={'subtitle2'}
+                  className={classes.letterspacing}
+                >
+                  WEEKLY NEWSLETTER
+                </Typography>
+              </Grid>
+              <Grid item>
+                <Paper className={classes.root}>
+                  <InputBase
+                    className={classes.input}
+                    placeholder='Enter your email'
+                    inputProps={{ 'aria-label': 'search google maps' }}
+                  />
+                  <IconButton color='secondary' className={classes.iconButton}>
+                    <Typography variant={'caption'}>Subscribe</Typography>
+                  </IconButton>
+                </Paper>
+              </Grid>
+            </Grid>
           </Grid>
         </Grid>
       </Grid>
       <Grid item>
         <Grid container direction={'column'} alignItems={'center'}>
           <Grid item>
-            <img src={line} className={classes.lineBox} />
+            <Link href='#' variant='caption' color={'secondary'}>
+              Shipping Info
+            </Link>
           </Grid>
           <Grid item>
-            <Typography variant={'subtitle2'} className={classes.letterspacing}>
-              WEEKLY NEWSLETTER
-            </Typography>
+            <Link href='#' variant='caption' color={'secondary'}>
+              Returns/Exchange
+            </Link>
           </Grid>
           <Grid item>
-            <Paper className={classes.root}>
-              <InputBase
-                className={classes.input}
-                placeholder='Enter your email'
-                inputProps={{ 'aria-label': 'search google maps' }}
-              />    
-              <IconButton
-                color='secondary'
-                className={classes.iconButton}
-              >
-                <Typography variant={'caption'}>Subscribe</Typography>
-              </IconButton>
-            </Paper>
+            <Link href='#' variant='caption' color={'secondary'}>
+              Contact
+            </Link>
           </Grid>
         </Grid>
       </Grid>
