@@ -24,13 +24,13 @@ const styles = () =>
     storyImage: {
       width: '410px',
       height: '600px'
-    },
-    storyBlog: {
-      position: 'absolute',
-      left: '7%',
-      color: 'black',
-      fontWeight: 'bold'
     }
+    // storyBlog: {
+    //   position: 'absolute',
+    //   left: '7%',
+    //   color: 'black',
+    //   fontWeight: 'bold'
+    // }
   });
 const Stories = ({ classes }) => (
   <>

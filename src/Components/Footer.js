@@ -79,19 +79,13 @@ const Footer = ({ classes }) => (
       <Grid item>
         <Grid container direction={'column'} alignItems={'center'}>
           <Grid item>
-            <Link href='#' variant='caption' color={'secondary'}>
-              Privacy Policy
-            </Link>
+            <Link href='#'>privacy policy</Link>
           </Grid>
           <Grid item>
-            <Link href='#' variant='caption' color={'secondary'}>
-              Terms & Conditions
-            </Link>
+            <Link href='#'>terms & conditions</Link>
           </Grid>
           <Grid item>
-            <Link href='#' variant='caption' color={'secondary'}>
-              About
-            </Link>
+            <Link href='#'>about</Link>
           </Grid>
         </Grid>
       </Grid>
@@ -146,10 +140,9 @@ const Footer = ({ classes }) => (
                   <InputBase
                     className={classes.input}
                     placeholder='Enter your email'
-                    inputProps={{ 'aria-label': 'search google maps' }}
                   />
                   <IconButton color='secondary' className={classes.iconButton}>
-                    <Typography variant={'caption'}>Subscribe</Typography>
+                    <Typography variant={'caption'}>SUBSCRIBE</Typography>
                   </IconButton>
                 </Paper>
               </Grid>
@@ -160,19 +153,13 @@ const Footer = ({ classes }) => (
       <Grid item>
         <Grid container direction={'column'} alignItems={'center'}>
           <Grid item>
-            <Link href='#' variant='caption' color={'secondary'}>
-              Shipping Info
-            </Link>
+            <Link href='#'>shipping info</Link>
           </Grid>
           <Grid item>
-            <Link href='#' variant='caption' color={'secondary'}>
-              Returns/Exchange
-            </Link>
+            <Link href='#'>Returns/Exachange</Link>
           </Grid>
           <Grid item>
-            <Link href='#' variant='caption' color={'secondary'}>
-              Contact
-            </Link>
+            <Link href='#'>contact</Link>
           </Grid>
         </Grid>
       </Grid>

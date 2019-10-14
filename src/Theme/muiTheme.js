@@ -37,6 +37,16 @@ const theme = createMuiTheme({
       elevation1: {
         boxShadow: 'unset'
       }
+    },
+    MuiLink: {
+      root: {
+        letterSpacing: '3px',
+        fontVariant: 'caption',
+        color: 'black',
+        fontSize: '12px',
+        lineHeight: '40px',
+        textTransform: 'uppercase'
+      }
     }
   }
 });

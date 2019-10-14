@@ -1,5 +1,6 @@
 const Routes = {
-  Landing: '/'
+  Landing: '/',
+  Products: '/products'
 };
 
-export default Routes
+export default Routes;
