@@ -23,14 +23,29 @@ const theme = createMuiTheme({
     }
   },
   overrides: {
-    MuiAvatar: {
-      avatar: {
-        margin: 10
+    MuiButton: {
+      root: {
+        borderRadius: '0px',
+        height: '48px',
+        width: '178px'
+      }
+    },
+    MuiPaper: {
+      rounded: {
+        borderRadius: 'unset'
       },
-      bigAvatar: {
-        margin: 10,
-        width: 60,
-        height: 60
+      elevation1: {
+        boxShadow: 'unset'
+      }
+    },
+    MuiLink: {
+      root: {
+        letterSpacing: '3px',
+        fontVariant: 'caption',
+        color: 'black',
+        fontSize: '12px',
+        lineHeight: '40px',
+        textTransform: 'uppercase'
       }
     }
   }
