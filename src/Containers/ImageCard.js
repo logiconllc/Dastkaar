@@ -7,16 +7,16 @@ import {
   Link,
   Typography
 } from '@material-ui/core';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
-const styles = () =>
+const styles = theme =>
   createStyles({
     background: {
       backgroundImage: props => 'url(' + props.productImage + ')',
       backgroundSize: 'contain',
       backgroundRepeat: 'no-repeat',
       height: '550px',
-      width: '382px',
-      backgroundColor: 'antiquewhite',
+      width: '20vw',
       backgroundPosition: 'center',
       position: 'relative'
     },
@@ -24,7 +24,7 @@ const styles = () =>
       backgroundSize: 'contain',
       backgroundRepeat: 'no-repeat',
       height: '550px',
-      width: '382px',
+      width: '20vw',
       backgroundColor: 'rgba(128, 128, 128, 0.8);',
       backgroundPosition: 'center',
       position: 'absolute',

@@ -12,7 +12,14 @@ import ImageCard from './ImageCard';
 import ProductImage from '../Images/productImage.jpg';
 import ProductImage2 from '../Images/productImage2.jpg';
 import ProductImage3 from '../Images/productImage3.jpg';
+import ProductImage5 from '../Images/productImage5.jpg';
+import ProductImage6 from '../Images/productImage6.jpg';
+import ProductImage4 from '../Images/productImage4.jpg';
+import ProductImage7 from '../Images/productImage7.jpg';
 import Footer from '../Components/Footer';
+import Fab from '@material-ui/core/Fab';
+import AddIcon from '@material-ui/icons/Add';
+import Routes from '../Utils/Routes';
 const styles = () =>
   createStyles({
     root: {
@@ -23,6 +30,10 @@ const styles = () =>
       position: 'inherit',
       marginLeft: 'unset',
       marginRight: 'unset'
+    },
+    fabIcon: {
+      paddingTop: '9%',
+      paddingRight: '12%'
     }
   });
 const Products = ({ classes }) => (
@@ -77,10 +88,7 @@ const Products = ({ classes }) => (
               </Typography>
             </Grid>
             <Grid item>
-              <Grid container direction={'row'} spacing={3} justify={'center'}>
-                <Grid item>
-                  <ImageCard productImage={ProductImage} />
-                </Grid>
+              <Grid container direction={'row'} spacing={2}>
                 <Grid item>
                   <ImageCard productImage={ProductImage2} />
                 </Grid>
@@ -88,8 +96,33 @@ const Products = ({ classes }) => (
                   <ImageCard productImage={ProductImage3} />
                 </Grid>
                 <Grid item>
-                  <ImageCard productImage={ProductImage} />
+                  <ImageCard productImage={ProductImage6} />
                 </Grid>
+                <Grid item>
+                  <ImageCard productImage={ProductImage5} />
+                </Grid>
+                <Grid item>
+                  <ImageCard productImage={ProductImage7} />
+                </Grid>
+                <Grid item>
+                  <ImageCard productImage={ProductImage4} />
+                </Grid>
+              </Grid>
+            </Grid>
+          </Grid>
+          <Grid item>
+            <Grid
+              container
+              alignItems={'center'}
+              justify={'center'}
+              className={classes.fabIcon}
+            >
+              <Grid item>
+                <Link to={Routes.Products}>
+                  <Fab color='secondary' aria-label='add'>
+                    <AddIcon />
+                  </Fab>
+                </Link>
               </Grid>
             </Grid>
           </Grid>
