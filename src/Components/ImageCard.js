@@ -7,7 +7,6 @@ import {
   Link,
   Typography
 } from '@material-ui/core';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 const styles = theme =>
   createStyles({

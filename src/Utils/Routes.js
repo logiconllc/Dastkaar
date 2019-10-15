@@ -1,6 +1,7 @@
 const Routes = {
   Landing: '/',
-  Products: '/products'
+  Products: '/products',
+  CheckOut: '/check-out'
 };
 
 export default Routes;

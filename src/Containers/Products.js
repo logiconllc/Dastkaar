@@ -8,8 +8,7 @@ import {
 } from '@material-ui/core';
 import Header from '../Components/Header';
 import { withStyles } from '@material-ui/styles';
-import ImageCard from './ImageCard';
-import ProductImage from '../Images/productImage.jpg';
+import ImageCard from '../Components/ImageCard';
 import ProductImage2 from '../Images/productImage2.jpg';
 import ProductImage3 from '../Images/productImage3.jpg';
 import ProductImage5 from '../Images/productImage5.jpg';
