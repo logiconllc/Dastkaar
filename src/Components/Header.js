@@ -9,6 +9,7 @@ import { createStyles } from '@material-ui/core';
 import Container from '@material-ui/core/Container';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import SearchIcon from '@material-ui/icons/Search';
+import logo from '../Images/logo.svg';
 
 const styles = () =>
   createStyles({
@@ -34,13 +35,7 @@ const Header = ({ classes }) => (
         <Toolbar>
           <Grid container justify={'space-between'} alignItems={'center'}>
             <Grid item>
-              <img
-                className={classes.img}
-                src={
-                  'https://www.thannleder.de/wp-content/themes/thann/img/THANN-Bioleder-Logo.png'
-                }
-                alt='logo'
-              />
+              <img className={classes.img} src={logo} alt='logo' />
             </Grid>
 
             <Grid item>

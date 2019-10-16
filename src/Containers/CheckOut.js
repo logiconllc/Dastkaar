@@ -9,53 +9,55 @@ import {
 } from '@material-ui/core';
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
+import CartProduct from '../Components/CartProduct';
 const styles = () =>
   createStyles({
     root: {
-      padding: '8%',
+      paddingTop: '8%',
+      paddingBottom: '8%',
       fontWeight: 'bolder'
     },
     hr: {
       width: '100%',
       color: 'black'
+    },
+    button: {
+      display: 'flex',
+      justifyContent: 'flex-end',
+      paddingBottom: '30%'
     }
   });
-const CheckOut = ({ classes }) => (
-  <>
-    <Header></Header>
-    <Container>
-      {' '}
-      <Typography variant={'h2'} className={classes.root}>
+
+const CheckOut = ({ classes }) => {
+  return (
+    <>
+      <Header></Header>
+      <Container>
         {' '}
-        Review Cart
-      </Typography>
-      <Grid item container justify={'space-between'}>
-        <Typography variant={'h6'}>Product</Typography>
-        <Typography variant={'h6'}>Qty</Typography>
-        <Typography variant={'h6'}>Total</Typography>
-      </Grid>
-      <hr className={classes.hr}></hr>
-      <Grid item container justify={'space-between'} alignItems={'center'}>
-        <img
-          src={
-            'https://cdn.shopify.com/s/files/1/0293/8269/products/WEBSITE_Antiquity_Necklace_compact.jpg?v=1436479254'
-          }
-        />
-        <Grid item>
-          <Typography>250</Typography>
+        <Typography variant={'h2'} className={classes.root}>
+          {' '}
+          Review Cart
+        </Typography>
+        <Grid item container justify={'space-between'}>
+          <Typography variant={'h6'}>Product</Typography>
+          <Typography variant={'h6'}>Qty</Typography>
+          <Typography variant={'h6'}>Total</Typography>
         </Grid>
+        <hr className={classes.hr}></hr>
         <Grid item>
-          <Typography>250$</Typography>
+          <CartProduct />
         </Grid>
-      </Grid>
-      <hr className={classes.hr}></hr>
-      <Grid item>
-        <Button variant='contained' color={'secondary'}>
-          Check Out
-        </Button>
-      </Grid>
-    </Container>
-    {/* <Footer /> */}
-  </>
-);
+        <hr className={classes.hr}></hr>
+        <Grid item className={classes.button}>
+          <Button variant='contained' color={'secondary'}>
+            Check Out
+          </Button>
+        </Grid>
+      </Container>
+
+      <Footer />
+    </>
+  );
+};
+
 export default withStyles(styles)(CheckOut);
