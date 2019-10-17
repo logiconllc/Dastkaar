@@ -62,18 +62,8 @@ const styles = () =>
       borderBottomStyle: 'solid'
     },
     AddtoCart: {
-      paddingRight: '20%'
-    },
-    Qoute: {
-      width: 'fit-content'
-    },
-    QouteFont: {
-      width: '49%'
-    },
-    Font: {
-      fontFamily: 'sabon-pro',
-      fontSize: '32px'
-    }
+      paddingLeft: '20%'
+}
   });
 const AddToCart = ({ classes }) => {
   const [value, setValue] = React.useState(2);
@@ -104,34 +94,36 @@ const AddToCart = ({ classes }) => {
                   <b>Essential Oil Burner - White Marble</b>
                 </Typography>
               </Grid>
-              <Grid item container justify={'center'}>
-                <Grid item>
-                  <img src={ProductImage} className={classes.imageSize} />
-                </Grid>
-                <Grid item>
-                  <Grid
-                    container
-                    direction={'column'}
-                    className={classes.AddtoCart}
-                  >
-                    <Grid item className={classes.forAddCartPrice}>
-                      <Typography variant={'h6'}>
-                        $270{' '}
-                        <span>
+              <Grid item>
+                <Grid container justify={'center'} alignItems={'center'} style={{marginTop: '25%'}}>
+                  <Grid item>
+                    <img width={400} src={ProductImage}  alt={'image'}/>
+                  </Grid>
+                  <Grid item>
+                    <Grid
+                        container
+                        direction={'column'}
+                        className={classes.AddtoCart}
+                    >
+                      <Grid item className={classes.forAddCartPrice}>
+                        <Typography variant={'h6'}>
+                          $270{' '}
+                          <span>
                           <Typography variant={'caption'}>USD</Typography>
                         </span>
-                      </Typography>
-                    </Grid>
-                    <Grid item>
-                      <VariantComponent
-                        parentCallback={callbackFunction}
-                        count={count}
-                      />
-                    </Grid>
-                    <Grid item>
-                      <Button variant='contained' color={'secondary'}>
-                        Add To Cart
-                      </Button>
+                        </Typography>
+                      </Grid>
+                      <Grid item>
+                        <VariantComponent
+                            parentCallback={callbackFunction}
+                            count={count}
+                        />
+                      </Grid>
+                      <Grid item>
+                        <Button variant='contained' color={'secondary'}>
+                          Add To Cart
+                        </Button>
+                      </Grid>
                     </Grid>
                   </Grid>
                 </Grid>
@@ -247,8 +239,8 @@ const AddToCart = ({ classes }) => {
             </Grid>
           </Grid>
         </Grid>
+        <ProductVideo />
       </Container>
-      <ProductVideo />
       <Footer />
     </>
   );

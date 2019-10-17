@@ -14,6 +14,8 @@ import line from '../Images/line.svg';
 import Paper from '@material-ui/core/Paper';
 import InputBase from '@material-ui/core/InputBase';
 import IconButton from '@material-ui/core/IconButton';
+import logo from '../Images/logo.svg';
+
 const styles = () =>
   createStyles({
     imgSizing: {
@@ -97,9 +99,9 @@ const Footer = ({ classes }) => (
           alignItems={'center'}
         >
           <Grid item>
-            <img
+            <img height={30}
               src={
-                'https://handlavet.edge-themes.com/wp-content/uploads/2019/03/logo-standard-black.png'
+                logo
               }
               alt='logo'
             />
