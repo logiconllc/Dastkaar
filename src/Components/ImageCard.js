@@ -4,11 +4,12 @@ import {
   withStyles,
   Container,
   Grid,
-  Link,
   Typography
 } from '@material-ui/core';
+import { Link } from 'react-router-dom';
+import Routes from '../Utils/Routes';
 
-const styles = theme =>
+const styles = () =>
   createStyles({
     background: {
       backgroundImage: props => 'url(' + props.productImage + ')',
@@ -63,7 +64,7 @@ const ImageCard = ({ classes }) => (
             </Typography>
           </Grid>
           <Grid item>
-            <Link href={'#'} className={classes.hoverImage}>
+            <Link className={classes.hoverImage} to={Routes.AddToCart}>
               Click to open product
             </Link>
           </Grid>
