@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Typography, Grid } from '@material-ui/core';
+import { Typography, Grid } from '@material-ui/core';
 
 class VariantComponent extends React.Component {
   increment = () => {
