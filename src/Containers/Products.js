@@ -58,20 +58,17 @@ const Products = ({ classes }) => (
               <Grid container direction={'column'}>
                 <Grid item>
                   <Link href='#'>
-                    {' '}
-                    <b>Category 1</b>
+                    <b>Not Just Clay</b>
                   </Link>
                 </Grid>
                 <Grid item>
                   <Link href='#'>
-                    {' '}
-                    <b>Category 2</b>
+                    <b>Crafture</b>
                   </Link>
                 </Grid>
                 <Grid item>
                   <Link href='#'>
-                    {' '}
-                    <b>Category 3</b>
+                    <b>Fabroidery</b>
                   </Link>
                 </Grid>
               </Grid>
@@ -82,8 +79,7 @@ const Products = ({ classes }) => (
           <Grid container direction={'column'} justify={'flex-start'}>
             <Grid item>
               <Typography variant='h3'>
-                {' '}
-                <b>Product List</b>
+                <b>More Than Souvenirs</b>
               </Typography>
             </Grid>
             <Grid item>
