@@ -1,12 +1,13 @@
 import React from 'react';
 import { Grid, createStyles } from '@material-ui/core';
-import banner from '../Images/banner-img.jpg';
+import banner from '../Images/hero-image.jpg';
 import withStyles from '@material-ui/core/styles/withStyles';
 
 const styles = () => {
   return createStyles({
     image: {
-      width: '100%'
+      width: '100%',
+      maxHeight: '100vh'
     }
   });
 };

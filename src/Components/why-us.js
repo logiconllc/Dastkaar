@@ -2,6 +2,9 @@ import React from 'react';
 import { Grid, createStyles, Typography } from '@material-ui/core';
 import { withStyles } from '@material-ui/styles';
 import Container from '@material-ui/core/Container';
+import HelpingHand from '../Images/helping-hand.svg'
+import Nature from '../Images/nature.svg'
+import Quality from '../Images/quality.svg'
 
 const styles = () =>
   createStyles({
@@ -24,13 +27,13 @@ const Products = ({ classes }) => (
       >
         <Grid item>
           <Typography variant={'h1'} className={classes.heading}>
-            Genuine bioleather
+            Hands do Matter
           </Typography>
         </Grid>
         <Grid item>
           <Typography display={'block'} variant={'subtitle1'} align={'center'}>
-            There is no certificate for Bioleder. That's why we have set <br />{' '}
-            up a consistent production chain ourselves.
+            Our philosophy is that the hands which make your life and <br/> home beautiful
+            deserves something EXTRA-ordinary
           </Typography>
         </Grid>
         <Grid item>
@@ -39,19 +42,20 @@ const Products = ({ classes }) => (
               <Grid container direction={'column'} alignItems={'center'}>
                 <Grid item>
                   <img
-                    width={'180'}
-                    src='https://www.thannleder.de/wp-content/themes/thann/img/icons/biorind.png'
-                    alt='Biorinder'
+                    width={'120'}
+                    height={'120'}
+                    src={HelpingHand}
+                    alt='helping-hand'
                   />
                 </Grid>
                 <Grid item>
-                  <Typography variant={'h6'}>Biorinder</Typography>
+                  <Typography variant={'h6'}>Make Them Grow</Typography>
                 </Grid>
                 <Grid item>
                   <Typography variant={'subtitle1'} align={'center'}>
-                    The leather for our products comes from <br />
-                    southern German biorimans, who live in the herd,
-                    <br /> all year round in the pasture.
+                    Give the hands some love for what they do. <br/>
+                    We help them in realizing their dreams by <br/>
+                    giving them 60% for each product sold
                   </Typography>
                 </Grid>
               </Grid>
@@ -60,19 +64,21 @@ const Products = ({ classes }) => (
               <Grid container direction={'column'} alignItems={'center'}>
                 <Grid item>
                   <img
-                    width={'180'}
-                    src='https://www.thannleder.de/wp-content/themes/thann/img/icons/weideschlachtung.png'
-                    alt='Biorinder'
+                    width={'120'}
+                    height={'120'}
+                    src={Nature}
+                    alt='nature'
                   />
                 </Grid>
                 <Grid item>
-                  <Typography variant={'h6'}>Biorinder</Typography>
+                  <Typography variant={'h6'}>Close to Nature</Typography>
                 </Grid>
                 <Grid item>
                   <Typography variant={'subtitle1'} align={'center'}>
-                    The leather for our products comes from <br />
-                    southern German biorimans, who live in the herd,
-                    <br /> all year round in the pasture.
+                    With the ever increasing global warming, our <br/>
+                    handicrafts are close to nature. The hands understand <br/>
+                    this, hence only using materials which do not <br/>
+                    harm mother nature
                   </Typography>
                 </Grid>
               </Grid>
@@ -81,19 +87,20 @@ const Products = ({ classes }) => (
               <Grid container direction={'column'} alignItems={'center'}>
                 <Grid item>
                   <img
-                    width={'180'}
-                    src='https://www.thannleder.de/wp-content/themes/thann/img/icons/pflanzengerbung.png'
-                    alt='Biorinder'
+                    width={'120'}
+                    height={'120'}
+                    src={Quality}
+                    alt='best-quality'
                   />
                 </Grid>
                 <Grid item>
-                  <Typography variant={'h6'}>Biorinder</Typography>
+                  <Typography variant={'h6'}>Best Quality</Typography>
                 </Grid>
                 <Grid item>
                   <Typography variant={'subtitle1'} align={'center'}>
-                    The leather for our products comes from <br />
-                    southern German biorimans, who live in the herd,
-                    <br /> all year round in the pasture.
+                    Before reaching in your hand, all the crafts are <br/>
+                    inspected thoroughly. Any product which is not <br/>
+                    according to the standard is no product.
                   </Typography>
                 </Grid>
               </Grid>
