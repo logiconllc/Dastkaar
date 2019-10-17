@@ -6,6 +6,10 @@ import Fab from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
 import Routes from '../Utils/Routes';
 import { Link } from 'react-router-dom';
+import Cat1 from '../Images/cat1.jpg'
+import Embroidery from '../Images/embroidery.jpg'
+import Souvenir from '../Images/souvenir.jpg'
+import Furniture from '../Images/furniture.jpg'
 
 const styles = () =>
   createStyles({
@@ -16,7 +20,8 @@ const styles = () =>
       width: '100%'
     },
     conatinerPadding: {
-      padding: '96px'
+      paddingTop: '97px',
+      paddingBottom: '97px'
     },
     featureColor: {
       color: '#c57859'
@@ -44,11 +49,11 @@ const Category = ({ classes }) => (
       >
         <Grid item>
           <Typography variant={'subtitle1'} className={classes.featureColor}>
-            FEATURE PRODUCTS
+            CATEGORIES
           </Typography>
         </Grid>
         <Grid item>
-          <Typography variant={'h4'}>Designed with you in mind.</Typography>
+          <Typography variant={'h4'}>Our Hand Picked Stuff</Typography>
         </Grid>
 
         <Grid item className={classes.itemWidth}>
@@ -65,37 +70,34 @@ const Category = ({ classes }) => (
                   <img
                     className={classes.imgWidth}
                     src={
-                      'https://smartkaya.com/wp-content/themes/kaya/img/feat-materials.jpg '
+                      Cat1
                     }
-                    alt='Premium Material'
+                    alt='Category-1'
                   />
                 </Grid>
                 <Grid item>
-                  <Typography variant={'h6'}>Premium Material</Typography>
+                  <Typography variant={'h6'}>Not Just Clay</Typography>
                 </Grid>
                 <Grid item className={classes.fontcolor}>
-                  Kaya is designed to blend in beautifully with your home. All
-                  the fabrics and <br /> materials have been carefully selected
-                  for aesthetics and the best audio <br /> performance.
+                  Clay, water and heat combined with the hands turned the most
+                  fundamentals <br/> elements on earth into something mesmerizing
                 </Grid>
                 <Grid item>
                   <img
                     className={classes.imgWidth}
                     src={
-                      'https://smartkaya.com/wp-content/themes/kaya/img/feat-construction.jpg'
+                      Furniture
                     }
-                    alt='Durable construction'
+                    alt='Furniture'
                   />
                 </Grid>
                 <Grid item>
-                  <Typography variant={'h6'}>Durable construction</Typography>
+                  <Typography variant={'h6'}>Crafture</Typography>
                 </Grid>
                 <Grid item className={classes.fontcolor}>
-                  We made sure Kaya outlasts all the curious friends. The cloth
-                  is made <br /> from hemp fiber crafted by Tanzanian artisans.
-                  The inside is built with <br /> industrial graphite-light and
-                  powerful. The base is made of African wood, <br /> sourced
-                  carefully from local cooperatives.
+                  "Hands meet wood" means such a craftsmanship that would define new <br/>
+                  definition of comfortable. Additionally, the designs would keep your heart <br/>
+                  at peace because you would know that, you bought the right thing.
                 </Grid>
               </Grid>
             </Grid>
@@ -105,42 +107,37 @@ const Category = ({ classes }) => (
                   <img
                     className={classes.imgWidth}
                     src={
-                      'https://smartkaya.com/wp-content/themes/kaya/img/ring-light-anim.gif'
+                      Embroidery
                     }
-                    alt='Ring light'
+                    alt='embroidery'
                   />
                 </Grid>
                 <Grid item>
-                  <Typography variant={'h6'}>Ring light</Typography>
+                  <Typography variant={'h6'}>Fabroidery</Typography>
                 </Grid>
                 <Grid item className={classes.fontcolor}>
-                  See the status of your Kaya with the simple lights on the
-                  crown of your
-                  <br /> device. It’ll help you know when your smart speaker is
-                  pairing, listening, <br /> thinking, and speaking. When you
-                  want to turn your speaker off, simply <br /> hold the Kaya
-                  logo LED button.
+                  Fabric, Embroidery and Fabulous. We only need these three <br/>
+                  words to describe this category. The hands' subtle movements <br/>
+                  turn an ordinary fabric into something which would make you awe.
                 </Grid>
                 <Grid item>
                   <img
                     className={classes.imgWidth}
-                    height={'586'}
+                    height={'386'}
                     src={
-                      'https://smartkaya.com/wp-content/themes/kaya/img/feat-design.jpg'
+                      Souvenir
                     }
-                    alt='Made to work together'
+                    alt='Souvenir'
                   />
                 </Grid>
                 <Grid item>
-                  <Typography variant={'h6'}>Made to work together</Typography>
+                  <Typography variant={'h6'}>More Than Souvenirs</Typography>
                 </Grid>
                 <Grid item className={classes.fontcolor}>
-                  See the status of your Kaya with the simple lights on the
-                  crown of your
-                  <br /> device. It’ll help you know when your smart speaker is
-                  pairing, listening, <br /> thinking, and speaking. When you
-                  want to turn your speaker off, simply <br /> hold the Kaya
-                  logo LED button.
+                  You buy them, you buy the place. These souvenirs would take <br/>
+                  you back the place as if you are really their. The hands' <br/>
+                  movements are so eloquent that you could feel their handwork by <br/>
+                  just holding them.
                 </Grid>
               </Grid>
             </Grid>
