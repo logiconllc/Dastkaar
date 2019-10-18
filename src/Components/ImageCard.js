@@ -19,7 +19,8 @@ const styles = () =>
       width: '25vw',
       backgroundPosition: 'center',
       position: 'relative',
-      ['@media (max-width:1280px)']: { // eslint-disable-line no-useless-computed-key
+      ['@media (max-width:1280px)']: {
+        // eslint-disable-line no-useless-computed-key
         width: '23vw'
       }
     },
@@ -37,7 +38,8 @@ const styles = () =>
       '&:hover': {
         opacity: 1
       },
-      ['@media (max-width:1280px)']: { // eslint-disable-line no-useless-computed-key
+      ['@media (max-width:1280px)']: {
+        // eslint-disable-line no-useless-computed-key
         width: '23vw'
       }
     },

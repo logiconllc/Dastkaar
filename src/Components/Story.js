@@ -4,7 +4,8 @@ import {
   Grid,
   Typography,
   createStyles,
-  Button
+  Button,
+  Box
 } from '@material-ui/core';
 import { withStyles } from '@material-ui/styles';
 import story from '../Images/stories.jpeg';

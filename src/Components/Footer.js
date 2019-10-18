@@ -99,12 +99,7 @@ const Footer = ({ classes }) => (
           alignItems={'center'}
         >
           <Grid item>
-            <img height={30}
-              src={
-                logo
-              }
-              alt='logo'
-            />
+            <img height={30} src={logo} alt='logo' />
           </Grid>
           <Grid item>
             <Grid

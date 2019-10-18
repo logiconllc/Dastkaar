@@ -18,16 +18,16 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Footer from '../Components/Footer';
 import VariantComponent from '../Components/QuantityVariant';
 import ProductVideo from '../Components/ProductVideo';
+import { Link } from 'react-router-dom';
+import Routes from '../Utils/Routes';
 const styles = () =>
   createStyles({
     background: {
       backgroundColor: '#EFE3D4'
     },
     imageSize: {
-      top: '49%',
-      left: '16%',
-      width: '35%',
-      position: 'relative'
+      marginTop: '25%',
+      marginLeft: '25%'
     },
     conatinerPadding: {
       paddingTop: '47%',
@@ -63,7 +63,7 @@ const styles = () =>
     },
     AddtoCart: {
       paddingLeft: '20%'
-}
+    }
   });
 const AddToCart = ({ classes }) => {
   const [value, setValue] = React.useState(2);
@@ -95,34 +95,42 @@ const AddToCart = ({ classes }) => {
                 </Typography>
               </Grid>
               <Grid item>
-                <Grid container justify={'center'} alignItems={'center'} style={{marginTop: '25%'}}>
+                <Grid
+                  container
+                  justify={'center'}
+                  alignItems={'center'}
+                  className={classes.imageSize}
+                >
                   <Grid item>
-                    <img width={400} src={ProductImage}  alt={'image'}/>
+                    <img width={400} src={ProductImage} alt={'image'} />
                   </Grid>
                   <Grid item>
                     <Grid
-                        container
-                        direction={'column'}
-                        className={classes.AddtoCart}
+                      container
+                      direction={'column'}
+                      className={classes.AddtoCart}
                     >
                       <Grid item className={classes.forAddCartPrice}>
                         <Typography variant={'h6'}>
                           $270{' '}
                           <span>
-                          <Typography variant={'caption'}>USD</Typography>
-                        </span>
+                            <Typography variant={'caption'}>USD</Typography>
+                          </span>
                         </Typography>
                       </Grid>
                       <Grid item>
                         <VariantComponent
-                            parentCallback={callbackFunction}
-                            count={count}
+                          parentCallback={callbackFunction}
+                          count={count}
                         />
                       </Grid>
                       <Grid item>
-                        <Button variant='contained' color={'secondary'}>
-                          Add To Cart
-                        </Button>
+                        <Link to={Routes.CheckOut}>
+                          {' '}
+                          <Button variant='contained' color={'secondary'}>
+                            Add To Cart
+                          </Button>
+                        </Link>
                       </Grid>
                     </Grid>
                   </Grid>
