@@ -45,7 +45,7 @@ const Products = ({ classes }) => (
         justify='space-around'
         className={classes.root}
       >
-        <Grid item xs={4}>
+        <Grid item xs={3}>
           <Grid container direction={'column'}>
             <Grid item>
               <Typography variant='h4'>
@@ -75,7 +75,7 @@ const Products = ({ classes }) => (
             </Grid>
           </Grid>
         </Grid>
-        <Grid item xs={8}>
+        <Grid item xs={9}>
           <Grid container direction={'column'} justify={'flex-start'}>
             <Grid item>
               <Typography variant='h3'>

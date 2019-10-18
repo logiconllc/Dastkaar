@@ -16,15 +16,18 @@ const styles = () =>
       backgroundSize: 'contain',
       backgroundRepeat: 'no-repeat',
       height: '550px',
-      width: '20vw',
+      width: '25vw',
       backgroundPosition: 'center',
-      position: 'relative'
+      position: 'relative',
+      ['@media (max-width:1280px)']: { // eslint-disable-line no-useless-computed-key
+        width: '23vw'
+      }
     },
     secondBackground: {
       backgroundSize: 'contain',
       backgroundRepeat: 'no-repeat',
       height: '550px',
-      width: '20vw',
+      width: '25vw',
       backgroundColor: 'rgba(128, 128, 128, 0.8);',
       backgroundPosition: 'center',
       position: 'absolute',
@@ -33,6 +36,9 @@ const styles = () =>
       opacity: 0,
       '&:hover': {
         opacity: 1
+      },
+      ['@media (max-width:1280px)']: { // eslint-disable-line no-useless-computed-key
+        width: '23vw'
       }
     },
     hoverImage: {
@@ -48,7 +54,7 @@ const ImageCard = ({ classes }) => (
   <>
     <Container>
       <Grid container justify={'space-between'}>
-        <Grid item className={classes.background}></Grid>
+        <Grid item className={classes.background} />
 
         <Grid
           item
